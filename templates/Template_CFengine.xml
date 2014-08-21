@@ -1,0 +1,1962 @@
+<?xml version="1.0"?>
+<zabbix_export version="1.0" date="12.08.09" time="09.21">
+	<hosts>
+		<host name="Template_Oracle">
+			<useip>0</useip>
+			<dns></dns>
+			<ip>0.0.0.0</ip>
+			<port>10050</port>
+			<status>3</status>
+			<groups>
+				<group>Templates</group>
+			</groups>
+			<items>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q  lio_block_changes]" value_type="3">
+					<description>LI/O Block Change</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>Blocks/sec</units>
+					<multiplier>0</multiplier>
+					<delta>2</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q  miss_latch]" value_type="3">
+					<description>Miss Latch</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q  sga_java_pool]" value_type="0">
+					<description>SGA java pool</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>M</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q  sga_large_pool]" value_type="0">
+					<description>SGA large pool</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>M</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q  sga_shared_pool]" value_type="0">
+					<description>SGA shared pool</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>M</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q audit]" value_type="4">
+					<description>Audit</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>0</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q dbblockgets]" value_type="3">
+					<description>DB Block Gets</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q dbconsistentgets]" value_type="3">
+					<description>DB Consistent Gets</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>300</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q dbhitratio]" value_type="0">
+					<description>DB Hit Ratio</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q dbphysicalread]" value_type="3">
+					<description>DB Physical Reads</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q hitratio_body]" value_type="0">
+					<description>Hit ratio - BODY</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>%</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q hitratio_sqlarea]" value_type="0">
+					<description>Hit ratio - SQLAREA</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>%</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q hitratio_table_proc]" value_type="0">
+					<description>Hit ratio - TABLE/PROCEDURE</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>%</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q hitratio_trigger]" value_type="0">
+					<description>Hit ratio - TRIGGER</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>%</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q lio_consistent_read]" value_type="0">
+					<description>LI/O Consinstent Read</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>Blocks/sec</units>
+					<multiplier>0</multiplier>
+					<delta>2</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q lio_current_read]" value_type="3">
+					<description>LI/O Current Read</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>Blocks/sec</units>
+					<multiplier>0</multiplier>
+					<delta>2</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q locks]" value_type="4">
+					<description>Locks</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>0</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q maxprocs]" value_type="3">
+					<description>Max Processes</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>86400</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q maxsession]" value_type="3">
+					<description>Max Sessions</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>86400</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q pga]" value_type="0">
+					<description>PGA</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q pga_aggregate_target]" value_type="0">
+					<description>PGA Aggregate target</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>86400</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q phio_datafile_reads]" value_type="3">
+					<description>PHI/O Datafile Reads</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>IO/sec</units>
+					<multiplier>0</multiplier>
+					<delta>1</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q phio_datafile_writes]" value_type="3">
+					<description>PHI/O Datafile Writes</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>IO/sec</units>
+					<multiplier>0</multiplier>
+					<delta>1</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q phio_redo_writes]" value_type="3">
+					<description>PHI/O Redo Writes</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>IO/sec</units>
+					<multiplier>0</multiplier>
+					<delta>1</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q pinhitratio_body]" value_type="0">
+					<description>Pin hit ratio - BODY</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>%</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q pinhitratio_sqlarea]" value_type="0">
+					<description>Pin hit ratio - SQLAREA</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>%</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q pinhitratio_table-proc]" value_type="0">
+					<description>Pin hit ratio - TABLE/PROCEDURE</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>%</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q pinhitratio_trigger]" value_type="0">
+					<description>Pin hit ratio - TRIGGER</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>%</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q pool_dict_cache]" value_type="0">
+					<description>Pool dict cache</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>M</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q pool_free_mem]" value_type="0">
+					<description>Pool free mem</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>M</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q pool_lib_cache]" value_type="0">
+					<description>Pool lib cache</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>M</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q pool_misc]" value_type="0">
+					<description>Pool misc</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>M</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q pool_sql_area]" value_type="0">
+					<description>Pool sql area</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>M</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q procnum]" value_type="3">
+					<description>Processes</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q session]" value_type="3">
+					<description>Sessions</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q session_active]" value_type="3">
+					<description>Session Active</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q session_inactive]" value_type="3">
+					<description>Session Inactive</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q session_system]" value_type="3">
+					<description>Session System</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q sga_buffer_cache]" value_type="0">
+					<description>SGA buffer cache</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>M</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q sga_fixed]" value_type="0">
+					<description>SGA fixed</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>M</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q sga_log_buffer]" value_type="0">
+					<description>SGA log buffer</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>M</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q tbl_space]" value_type="4">
+					<description>Tablespaces</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>900</delay>
+					<history>90</history>
+					<trends>0</trends>
+					<status>0</status>
+					<units></units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q waits_controfileio]" value_type="3">
+					<description>Waits Controlfile I/O</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>ms waits/s</units>
+					<multiplier>0</multiplier>
+					<delta>1</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q waits_directpath_read]" value_type="3">
+					<description>Waits direct path read</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>ms waits/s</units>
+					<multiplier>0</multiplier>
+					<delta>1</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q waits_file_io]" value_type="3">
+					<description>Waits File I/O</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>ms waits/s</units>
+					<multiplier>0</multiplier>
+					<delta>1</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q waits_logwrite]" value_type="3">
+					<description>Waits Logwrite</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>ms waits/s</units>
+					<multiplier>0</multiplier>
+					<delta>1</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q waits_multiblock_read]" value_type="3">
+					<description>Waits multiblock read</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>ms waits/s</units>
+					<multiplier>0</multiplier>
+					<delta>1</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q waits_other]" value_type="3">
+					<description>Waits others</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>ms waits/s</units>
+					<multiplier>0</multiplier>
+					<delta>1</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q waits_singleblock_read]" value_type="3">
+					<description>Waits single block read</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>ms waits/s</units>
+					<multiplier>0</multiplier>
+					<delta>1</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -q waits_sqlnet]" value_type="3">
+					<description>Waits SQLNet</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>ms waits/s</units>
+					<multiplier>0</multiplier>
+					<delta>1</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -s]" value_type="0">
+					<description>Connection</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>sec</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				<item type="10" key="check_ora.sh[-i {HOSTNAME} -t]" value_type="3">
+					<description>TNSPing</description>
+					<ipmi_sensor></ipmi_sensor>
+					<delay>300</delay>
+					<history>90</history>
+					<trends>365</trends>
+					<status>0</status>
+					<units>msec</units>
+					<multiplier>0</multiplier>
+					<delta>0</delta>
+					<formula>1</formula>
+					<lastlogsize>0</lastlogsize>
+					<logtimefmt></logtimefmt>
+					<delay_flex></delay_flex>
+					<params>DSN=&lt;database source name&gt;\nuser=&lt;user name&gt;\npassword=&lt;password&gt;\nsql=&lt;query&gt;</params>
+					<trapper_hosts></trapper_hosts>
+					<snmp_community>public</snmp_community>
+					<snmp_oid>interfaces.ifTable.ifEntry.ifInOctets.1</snmp_oid>
+					<snmp_port>161</snmp_port>
+					<snmpv3_securityname></snmpv3_securityname>
+					<snmpv3_securitylevel>0</snmpv3_securitylevel>
+					<snmpv3_authpassphrase></snmpv3_authpassphrase>
+					<snmpv3_privpassphrase></snmpv3_privpassphrase>
+					<applications>
+						<application>Oracle</application>
+					</applications>
+				</item>
+				
+			</items>
+			<graphs>
+				<graph name="Sessions" width="900" height="200">
+					<yaxistype>2</yaxistype>
+					<show_work_period>1</show_work_period>
+					<show_triggers>1</show_triggers>
+					<graphtype>1</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q session_system]">
+							<drawtype>1</drawtype>
+							<sortorder>0</sortorder>
+							<color>FF00FF</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q session_active]">
+							<drawtype>1</drawtype>
+							<sortorder>1</sortorder>
+							<color>009900</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q session_inactive]">
+							<drawtype>1</drawtype>
+							<sortorder>2</sortorder>
+							<color>0000FF</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				<graph name="PGA" width="900" height="200">
+					<yaxistype>0</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>0</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q pga]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>009900</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				<graph name="Hit Ratio" width="900" height="200">
+					<yaxistype>1</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>0</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q hitratio_trigger]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>0000CC</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q hitratio_sqlarea]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>FF99FF</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q hitratio_body]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>FFFF33</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q hitratio_table_proc]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>009900</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				<graph name="Pin Hit Ratio" width="900" height="200">
+					<yaxistype>1</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>0</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q pinhitratio_trigger]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>00CC00</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q pinhitratio_sqlarea]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>990099</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q pinhitratio_body]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>999900</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q pinhitratio_table-proc]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>000099</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				<graph name="Session/Process" width="900" height="200">
+					<yaxistype>0</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>0</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q procnum]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>009900</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q session]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>0000FF</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				<graph name="Logical I/O" width="900" height="200">
+					<yaxistype>2</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>1</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q lio_current_read]">
+							<drawtype>1</drawtype>
+							<sortorder>0</sortorder>
+							<color>FF6666</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q  lio_block_changes]">
+							<drawtype>1</drawtype>
+							<sortorder>0</sortorder>
+							<color>00FFFF</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q lio_consistent_read]">
+							<drawtype>1</drawtype>
+							<sortorder>0</sortorder>
+							<color>0000FF</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				<graph name="Physical I/O" width="900" height="200">
+					<yaxistype>2</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>0</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q phio_datafile_writes]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>FF6666</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>7</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q phio_datafile_reads]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>00FFFF</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>7</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q phio_redo_writes]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>0000CC</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>7</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				<graph name="Events Waits" width="900" height="200">
+					<yaxistype>2</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>1</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q waits_file_io]">
+							<drawtype>1</drawtype>
+							<sortorder>0</sortorder>
+							<color>9999FF</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q waits_other]">
+							<drawtype>1</drawtype>
+							<sortorder>1</sortorder>
+							<color>FF3333</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q waits_singleblock_read]">
+							<drawtype>1</drawtype>
+							<sortorder>2</sortorder>
+							<color>FF00FF</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q waits_multiblock_read]">
+							<drawtype>1</drawtype>
+							<sortorder>3</sortorder>
+							<color>FFFF00</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q waits_directpath_read]">
+							<drawtype>1</drawtype>
+							<sortorder>4</sortorder>
+							<color>009900</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q waits_sqlnet]">
+							<drawtype>1</drawtype>
+							<sortorder>5</sortorder>
+							<color>888888</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q waits_controfileio]">
+							<drawtype>1</drawtype>
+							<sortorder>6</sortorder>
+							<color>00CCCC</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q waits_logwrite]">
+							<drawtype>1</drawtype>
+							<sortorder>7</sortorder>
+							<color>FF9999</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				<graph name="TNSPing" width="900" height="200">
+					<yaxistype>2</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>0</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -t]">
+							<drawtype>2</drawtype>
+							<sortorder>0</sortorder>
+							<color>00FFFF</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				<graph name="SGA Memory Usage" width="900" height="200">
+					<yaxistype>2</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>1</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q sga_buffer_cache]">
+							<drawtype>1</drawtype>
+							<sortorder>0</sortorder>
+							<color>009900</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q sga_fixed]">
+							<drawtype>1</drawtype>
+							<sortorder>1</sortorder>
+							<color>CC0000</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q  sga_java_pool]">
+							<drawtype>1</drawtype>
+							<sortorder>2</sortorder>
+							<color>00CCCC</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q  sga_large_pool]">
+							<drawtype>1</drawtype>
+							<sortorder>3</sortorder>
+							<color>CC00CC</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q sga_log_buffer]">
+							<drawtype>1</drawtype>
+							<sortorder>4</sortorder>
+							<color>CCCC00</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q  sga_shared_pool]">
+							<drawtype>1</drawtype>
+							<sortorder>5</sortorder>
+							<color>0000CC</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				<graph name="Shared Pool" width="900" height="200">
+					<yaxistype>2</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>1</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q pool_dict_cache]">
+							<drawtype>1</drawtype>
+							<sortorder>0</sortorder>
+							<color>009900</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q pool_free_mem]">
+							<drawtype>1</drawtype>
+							<sortorder>1</sortorder>
+							<color>990000</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q pool_lib_cache]">
+							<drawtype>1</drawtype>
+							<sortorder>2</sortorder>
+							<color>009999</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q pool_misc]">
+							<drawtype>1</drawtype>
+							<sortorder>3</sortorder>
+							<color>990099</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -q pool_sql_area]">
+							<drawtype>1</drawtype>
+							<sortorder>4</sortorder>
+							<color>CCCC00</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				<graph name="Connection" width="900" height="200">
+					<yaxistype>2</yaxistype>
+					<show_work_period>0</show_work_period>
+					<show_triggers>0</show_triggers>
+					<graphtype>0</graphtype>
+					<yaxismin>0.0000</yaxismin>
+					<yaxismax>100.0000</yaxismax>
+					<show_legend>0</show_legend>
+					<show_3d>0</show_3d>
+					<percent_left>0.0000</percent_left>
+					<percent_right>0.0000</percent_right>
+					<graph_elements>
+						<graph_element item="Template_Oracle:check_ora.sh[-i {HOSTNAME} -s]">
+							<drawtype>0</drawtype>
+							<sortorder>0</sortorder>
+							<color>009900</color>
+							<yaxisside>0</yaxisside>
+							<calc_fnc>2</calc_fnc>
+							<type>0</type>
+							<periods_cnt>5</periods_cnt>
+						</graph_element>
+					</graph_elements>
+				</graph>
+				
+			</graphs>
+		</host>
+	</hosts>
+</zabbix_export>
